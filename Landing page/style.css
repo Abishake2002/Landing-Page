@@ -1,0 +1,245 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-style: normal;
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+}
+
+
+/* Header-wrapper start */
+header{
+    background-image: url(./Img/bg-header-desktop.png ) ;
+    background-repeat: no-repeat;
+}
+.header-wrapper{
+    display: flex;
+    justify-content: center;
+
+}
+.header-wrapper img{
+    width: 100px;
+    position: relative;
+    top: 50px;
+}
+.para{
+    text-align: center;
+    margin-top: 80px;
+}
+.para>p{
+    color: grey;
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+.my-btn-1{
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: hsl(171, 66%, 44%);
+    border: none;
+    /* box-shadow: 30px; */
+    box-shadow: 1px 1px 3px hsl(171, 66%, 44%);
+}
+.my-btn-2{
+    border-radius: 20px;
+    padding: 10px 30px;
+    background-color: hsl(233, 100%, 69%);
+    border: none;
+    box-shadow: 1px 1px 3px hsl(233, 100%, 69%);
+}
+.buttons{
+    margin-top: 35px ;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    
+}
+.buttons>.my-btn-1>a{
+    text-decoration: none;
+    color: white;
+}
+.buttons>.my-btn-2>a{
+    text-decoration: none;
+    color: white;
+}
+.my-btn-1:hover{
+    cursor: pointer;
+}
+.my-btn-2:hover{
+    cursor: pointer;
+}
+
+/* Header End */
+
+
+
+
+/* Section-wrapper start */
+
+.section-wrapper{
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* section-wrapper end */
+
+
+
+
+
+/* television start */
+
+.television{
+padding: 40px;
+}
+
+.television>div>div:nth-child(2){
+    padding: 40px;
+}
+
+/* Television End */
+
+
+/* Access start */
+.Access{
+    padding: 40px;
+}
+.Access-para{
+    text-align: center;
+}
+/* Access End */
+
+
+/* branches start */
+.branch{
+    text-align: center;
+    padding: 30px;
+}
+.branch>div>div>h5{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+/* branches end */
+
+
+
+/* companies start */
+.companies{
+    padding: 60px 30px;
+}
+
+.image-box{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+/* companies end */
+
+
+/* prefooter start */
+.prefooter{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+/* prefooter end */
+
+
+/* footer start */
+.footer{
+    background-color: hsl(210, 5%, 92%);
+    padding: 40px;
+
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.logo{
+    size: 60px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+/* Media Query  */
+
+@media only screen and (min-width:768px){
+    .para>p>{
+        max-width: 80%;
+}
+}
+
+
+@media only screen and (max-width:576px){
+    .buttons{
+      flex-direction: column;
+      margin: 50px;
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .section-wrapper>p{
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width:576px){
+    .tv-paragraph{
+        text-align: center;
+
+    }
+    .tv-paragraph>p{
+        margin-left: 20px;
+    }
+}
+@media only screen and (min-width:768px){
+    .tv-paragraph>p{
+        max-width: 70%;
+
+    }
+}
+
+@media only screen and (max-width:768px){
+    .image-box{
+        display: flex;
+        flex-direction: column;
+        margin: 150px;
+        
+    }
+}
+
+@media only screen and (min-width:576px){
+    .prefooter>div>p>span{
+        display: block;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .footer-wrapper>div>div{
+        margin: 10px;
+        text-align: center;
+    }
+}
+
